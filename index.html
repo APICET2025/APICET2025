@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP ICET 2025 - Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            background-color: #2D95BC;
+            padding: 20px;
+            color: white;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header-center {
+            padding: 10px;
+        }
+
+        .header-title {
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #16495C;
+            padding: 15px;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .nav-links div {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Announcement Bar Styles */
+        .announcement-bar {
+            background: #2B8DB2;
+            color: white;
+            padding: 12px;
+            position: relative;
+            overflow: hidden;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .announcement-content {
+            display: flex;
+            animation: smooth-scroll 15s linear infinite;
+            gap: 80px;
+        }
+
+        .announcement-item {
+            white-space: nowrap;
+            padding: 0 20px;
+        }
+
+        .announcement-bar a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+    
+
+        /* Footer Styles */
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #174B5E;
+            padding: 15px;
+            color: white;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Animation */
+        @keyframes smooth-scroll {
+            
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .announcement-content:hover {
+        animation-play-state: paused;
+        cursor: pointer; /* Optional: changes cursor to indicate interactivity */
+}
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 20px;
+            }
+
+            header img {
+                max-height: 80px;
+                margin: 0 auto;
+            }
+
+            .header-title {
+                font-size: 1.5em;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+        }
+
+        @media screen and (max-width: 480px) {
+            .header-title {
+                font-size: 1.2em;
+            }
+
+            .announcement-content {
+                gap: 40px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Hamburger Menu for Mobile */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+        #reg
+        {
+            background-color: #00B2EF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        #imgc
+        {
+            margin-top: 20px;
+            width: 450px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="APICET2024_SKU_LOGO.png" width="90px"></div>
+        <div class="header-center">
+            <div class="header-title">AP ICET - 2025</div>
+            <div style="font-weight: bold;">Integrated Common Entrance Test</div>
+            <div style="font-weight: bold;">(Conducted by Sri Krishnadevaraya University, Anantapur on behalf of APSCHE)</div>
+        </div>
+        <div><img src="APSCHELogo.jpg" alt="APSCHE Logo" width="130px"></div>
+    </header>
+
+    <nav>
+        <div class="menu-toggle">☰ Menu</div>
+        <div class="nav-links">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Important Dates</div>
+            <div>Notification</div>
+            <div>Corrections</div>
+            <div>Mock Test</div>
+            <div>User Guide</div>
+            <div>Contact Us</div>
+        </div>
+    </nav>
+
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span class="announcement-item">🎓 AP ICET 2025 Registration Open</span>
+            <span class="announcement-item">📅 Last Date: March 28, 2025</span>
+            <span class="announcement-item">📚 Prepare for Mock Tests</span>
+            <span class="announcement-item">📞 Helpline: 1800-XXX-XXXX</span>
+            <span class="announcement-item">📱 Download <a href="https://play.google.com/store/apps/details?id=com.aponline.apmycet&pcampaignid=web_share" target="_blank" style="color: #CFE72B;">APSCHE myCET</a> from Google Play Store</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div><img src="AP-ICET-2023.jpg"id="imgc"></div>
+            <div style="color: green; font-weight: bold;">Click Here For Online Registration</div>
+            <div>👇🏻</div>
+            <a href="form.html"><button id="reg">Register Now</button></a>
+    </div>
+
+
+    <div>
+        <img src="AP-ICET-2025-NEWS.png" width="400px" style="margin-top: 30px;">
+    </div>
+    <footer>
+        <div>All Copy Rights Reserved with APSCHE.</div>
+        <div>
+            <span>Designed & Developed By</span>
+            <img src="aponline-logo.png" alt="AP Online Logo">
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
